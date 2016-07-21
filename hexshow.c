@@ -19,10 +19,17 @@ void hex_show(unsigned char *buffer, unsigned int length)
 
     // fix bug, the last line should be added
     row_total = (length % 16) ? (length / 16 + 1) : (length / 16);
+    
+    printf("row_total = %d, length = %d\n", row_total, length);
 
     for (row = 0; row < row_total; row++)
     {
-        row_bytes = (row == row_total - 1) ? (length % 16) : 16; // fixed
+    	if(row != row_total - 1) {
+    		row_bytes = 16;
+    	}
+    	else{
+    		row_bytes = (length % 16) ? (length % 16) : 16;
+    	}
 
         SHOW("\n%08X : ", row * 16);
 
