@@ -1,0 +1,37 @@
+﻿# see mips run
+
+jinfeng.zhuang@aliyun.com
+
+## 术语
+
+MISP - Microcomputer without Interlocked Pipeline Stage
+
+## 目录
+
+- 体系结构
+- 协处理器
+- CACHE
+- 异常处理
+- MEMORY
+- FLOAT
+- 指令集
+- 汇编
+- 移植参考
+- 软件标准
+- 调试
+- Linux中MIPS特有的问题
+- MIPS多线程
+- 指令集拓展
+
+## MIPS的故事
+
+## MIPS架构
+
+## 书籍
+
+- The Old New Things
+
+读书计划
+
+学习PCIe
+
